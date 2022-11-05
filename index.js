@@ -68,20 +68,27 @@ const connectToWA = () => {
 				conn.sendMessage(from, { text: teks }, { quoted: mek })
 			}
 
+
 			const isSUB = from == "120363043693753103@g.us" ? true : false
 
 			switch (command) {
 
 				//......................................................Commands..............................................................\\
 
-				case '6underground': {
+				case '6underground2019': {
 
 					if (!isSUB) return
 
-					await conn.sendMessage(from, {
-						image: { url: "https://telegra.ph/file/302d6b8a11c3c3af4f6a8.jpg" },
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6underground2019" } },
+					]
+					const buttonMessage = {
 						caption: "6 Underground | 2019 | English | Movie | With Sinhala Subtitles | TV Zone",
-					})
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/302d6b8a11c3c3af4f6a8.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
 				}
 					break
 
