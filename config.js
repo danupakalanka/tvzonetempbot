@@ -14,7 +14,7 @@ module.exports = {
 	MY_LOGO: process.env.MY_LOGO === undefined ? 'https://telegra.ph/file/59ae30418cdc0f288a002.jpg' : process.env.MY_LOGO,
 
 	FOOTER: process.env.FOOTER === undefined ? 'ⒸPowered By @NadithPro' : process.env.FOOTER,
-	TVFOOTER: process.env.TVFOOTER === undefined ? 'ⒸPowered By @NadithPro' : process.env.TVFOOTER,
+	BTNNAME: process.env.BTNNAME === undefined ? 'View Online' : process.env.BTNNAME,
 
 	OWNER_NAME: process.env.OWNER_NAME === undefined ? 'NadithPro' : process.env.OWNER_NAME,
 	OWNER_NUMBER: process.env.OWNER_NUMBER === undefined ? '94761327688' : process.env.OWNER_NUMBER,
