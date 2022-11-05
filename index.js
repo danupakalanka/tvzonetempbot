@@ -68,11 +68,15 @@ const connectToWA = () => {
 				conn.sendMessage(from, { text: teks }, { quoted: mek })
 			}
 
+			const isSUB = from == "120363043693753103@g.us" ? true : false
+
 			switch (command) {
 
 				//......................................................Commands..............................................................\\
 
 				case '6underground': {
+
+					if (!isSUB) return
 
 					await conn.sendMessage(from, {
 						image: { url: "https://telegra.ph/file/302d6b8a11c3c3af4f6a8.jpg" },
