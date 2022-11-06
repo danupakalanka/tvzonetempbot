@@ -12,7 +12,7 @@ const qrcode = require('qrcode-terminal')
 const util = require('util')
 const { state, saveState } = useSingleFileAuthState('./session.json')
 const config = require('./config')
-const prefix = ''
+const prefix = '.'
 const owner = ['761327688']
 const axios = require('axios')
 const connectToWA = () => {
@@ -75,7 +75,24 @@ const connectToWA = () => {
 
 				//......................................................Commands..............................................................\\
 
-				case '6underground2019': {
+				case 'movie 6 underground 2019': {
+
+					if (!isSUB) return
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6underground2019" } },
+					]
+					const buttonMessage = {
+						caption: "6 Underground | 2019 | English | Movie | With Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/302d6b8a11c3c3af4f6a8.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+				case 'movie 12 strong 2018': {
 
 					if (!isSUB) return
 
