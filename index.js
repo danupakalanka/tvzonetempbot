@@ -82,7 +82,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: '🔍', key: mek.key }})
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6-underground-2019" } },
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6_underground_2019" } },
 					]
 					const buttonMessage = {
 						caption: "6 Underground | 2019 | 18+ | English | Movie | With Sinhala Subtitles | TV Zone",
@@ -101,7 +101,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: '🔍', key: mek.key }})
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12-strong" } },
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12_strong" } },
 					]
 					const buttonMessage = {
 						caption: "12 Underground | 2018 | English | Movie | With Sinhala Subtitles | TV Zone",
