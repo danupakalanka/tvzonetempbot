@@ -12,7 +12,7 @@ const qrcode = require('qrcode-terminal')
 const util = require('util')
 const { state, saveState } = useSingleFileAuthState('./session.json')
 const config = require('./config')
-const prefix = '.'
+const prefix = '.tvzone'
 const owner = ['761327688']
 const axios = require('axios')
 const connectToWA = () => {
@@ -75,15 +75,15 @@ const connectToWA = () => {
 
 				//......................................................Commands..............................................................\\
 
-				case 'movie 6 underground 2019': {
+				case '6 underground': {
 
 					if (!isSUB) return
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6underground2019" } },
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6-underground-2019" } },
 					]
 					const buttonMessage = {
-						caption: "6 Underground | 2019 | English | Movie | With Sinhala Subtitles | TV Zone",
+						caption: "6 Underground | 2019 | 18+ | English | Movie | With Sinhala Subtitles | TV Zone",
 						footer: config.FOOTER,
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/302d6b8a11c3c3af4f6a8.jpg" }
@@ -92,7 +92,7 @@ const connectToWA = () => {
 				}
 					break
 
-				case 'movie 12 strong 2018': {
+				case '12-strong': {
 
 					if (!isSUB) return
 
@@ -100,10 +100,10 @@ const connectToWA = () => {
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6underground2019" } },
 					]
 					const buttonMessage = {
-						caption: "6 Underground | 2019 | English | Movie | With Sinhala Subtitles | TV Zone",
+						caption: "12 Underground | 2018 | English | Movie | With Sinhala Subtitles | TV Zone",
 						footer: config.FOOTER,
 						templateButtons: templateButtons,
-						image: { url: "https://telegra.ph/file/302d6b8a11c3c3af4f6a8.jpg" }
+						image: { url: "https://telegra.ph/file/6a4f88ced256406791899.jpg" }
 					}
 					await conn.sendMessage(from, buttonMessage)
 				}
