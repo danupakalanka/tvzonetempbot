@@ -75,9 +75,11 @@ const connectToWA = () => {
 
 				//......................................................Commands..............................................................\\
 
-				case '6-underground': {
+				case '6-underground-2019': {
 
 					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: '🔍', key: mek.key }})
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6-underground-2019" } },
@@ -92,9 +94,11 @@ const connectToWA = () => {
 				}
 					break
 
-				case '12-strong': {
+				case '12-strong-2018 ': {
 
 					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: '🔍', key: mek.key }})
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6underground2019" } },
