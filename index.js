@@ -78,12 +78,11 @@ const connectToWA = () => {
 				case '6-underground-2019':
 				case '6underground2019': {
 
-					if (!isSUB) return
 
 					conn.sendMessage(from, { react: { text: '🔍', key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6_underground_2019" } },
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6-underground-2019" } },
 					]
 					const buttonMessage = {
 						caption: "6 Underground | 2019 | 18+ | English | Movie | Sinhala Subtitles | TV Zone",
@@ -98,12 +97,11 @@ const connectToWA = () => {
 				case '12-strong-2018':
 				case '12strong2018': {
 
-					if (!isSUB) return
 
 					conn.sendMessage(from, { react: { text: '🔍', key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12_strong" } },
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12-strong" } },
 					]
 					const buttonMessage = {
 						caption: "12 Strong | 2018 | English | Movie | Sinhala Subtitles | TV Zone",
@@ -118,12 +116,11 @@ const connectToWA = () => {
 				case 'a-wrinkle-in-time-2018':
 				case 'awrinkleintime2018': {
 
-					if (!isSUB) return
 
 					conn.sendMessage(from, { react: { text: '🔍', key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12_strong" } },
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
 					]
 					const buttonMessage = {
 						caption: "A Wrinkle In Time | 2018 | English | Movie | Sinhala Subtitles | TV Zone",
