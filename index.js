@@ -75,17 +75,18 @@ const connectToWA = () => {
 
 				//......................................................Commands..............................................................\\
 
-				case '6-underground-2019': {
+				case '6-underground-2019':
+				case '6underground2019': {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: '🔍', key: mek.key }})
+					conn.sendMessage(from, { react: { text: '🔍', key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6_underground_2019" } },
 					]
 					const buttonMessage = {
-						caption: "6 Underground | 2019 | 18+ | English | Movie | With Sinhala Subtitles | TV Zone",
+						caption: "6 Underground | 2019 | 18+ | English | Movie | Sinhala Subtitles | TV Zone",
 						footer: config.FOOTER,
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/302d6b8a11c3c3af4f6a8.jpg" }
@@ -94,20 +95,41 @@ const connectToWA = () => {
 				}
 					break
 
-				case '12-strong-2018 ': {
+				case '12-strong-2018':
+				case '12strong2018': {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: '🔍', key: mek.key }})
+					conn.sendMessage(from, { react: { text: '🔍', key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12_strong" } },
 					]
 					const buttonMessage = {
-						caption: "12 Underground | 2018 | English | Movie | With Sinhala Subtitles | TV Zone",
+						caption: "12 Strong | 2018 | English | Movie | Sinhala Subtitles | TV Zone",
 						footer: config.FOOTER,
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/6a4f88ced256406791899.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+				case 'a-wrinkle-in-time-2018':
+				case 'awrinkleintime2018': {
+
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: '🔍', key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12_strong" } },
+					]
+					const buttonMessage = {
+						caption: "A Wrinkle In Time | 2018 | English | Movie | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/744d62178c740bea60133.jpg" }
 					}
 					await conn.sendMessage(from, buttonMessage)
 				}
