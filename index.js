@@ -76,10 +76,9 @@ const connectToWA = () => {
 				//......................................................Commands..............................................................\\
 
 				case '6-underground-2019':
-				case '6underground2019': {
+				case '6underground': {
 
-
-					conn.sendMessage(from, { react: { text: '🔍', key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6-underground-2019" } },
@@ -95,10 +94,9 @@ const connectToWA = () => {
 					break
 
 				case '12-strong-2018':
-				case '12strong2018': {
+				case '12strong': {
 
-
-					conn.sendMessage(from, { react: { text: '🔍', key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12-strong" } },
@@ -114,10 +112,9 @@ const connectToWA = () => {
 					break
 
 				case 'a-wrinkle-in-time-2018':
-				case 'awrinkleintime2018': {
+				case 'awrinkleintime': {
 
-
-					conn.sendMessage(from, { react: { text: '🔍', key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -127,6 +124,201 @@ const connectToWA = () => {
 						footer: config.FOOTER,
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/744d62178c740bea60133.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+					case 'after':
+				case 'after-2019':
+				case 'after-we-collided-2020':
+				case 'after-we-fell-2021': {
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+					]
+					const buttonMessage = {
+						caption: "After | 2019 - 2021 | English | Movie Series | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/b6cda88245576ed4de6b3.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+					case 'alienvspredator':
+				case 'alien-vs-predator-2004':
+				case 'aliens-vs-predator-requiem-2007': {
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+					]
+					const buttonMessage = {
+						caption: "Alien Vs Predator | 2004 - 2007 | English | Movie Series | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/16f2128d40f113d20ef83.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+					case 'aliens-in-the-attic-2009':
+				case 'aliensintheattic': {
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+					]
+					const buttonMessage = {
+						caption: "Aliens In The Attic | 2009 | English | Movie | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/26100348f501cf4bd0dd9.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+					case 'americanpie':
+				case 'american-pie-1999':
+				case 'american-pie-2001':
+				case 'american-pie-the-wedding-2003':
+				case 'american-pie-presents-band-camp-2005':
+				case 'american-pie-presents-the-naked-mile-2006':
+				case 'american-pie-presents-beta-house-2007':
+				case 'american-pie-presents-the-book-of-love-2009':
+				case 'american-pie-reunion-2012':
+				case 'american-pie-presents-girls-rules-2020': {
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+					]
+					const buttonMessage = {
+						caption: "American Pie | 1999 - 2020 | English | Movie Series | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/30aae396e71242612a62a.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+					case 'angrybirds':
+				case 'angry-birds-movie-2016':
+				case 'angry-birds-movie-2019': {
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+					]
+					const buttonMessage = {
+						caption: "The Angry Birds Movie | 2016 - 2019 | English | Movie Series | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/744d62178c740bea60133.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+					case 'antman':
+				case 'ant-man-and-the-wasp-2018': {
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+					]
+					const buttonMessage = {
+						caption: "Ant Man | 2015 - 2018 | English | Movie Series | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/944952aedae0ecec48644.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+					case 'artemis-fowl-2020':
+				case 'artemisfowl': {
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+					]
+					const buttonMessage = {
+						caption: "Artemis Fowl | 2020 | English | Movie | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/75e6e689b690bba8e25c5.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+					case 'assassinscreed':
+				case 'assassins-creed-2016': {
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+					]
+					const buttonMessage = {
+						caption: "Assassin's Creed | 2016 | English | Movie | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/75e6e689b690bba8e25c5.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+					case 'avengers':
+				case 'the-avengers-2012':
+				case 'avengers-age-of-ultron-2015':
+				case 'avengers-infinity-war-2018':
+				case 'avengers-endgame-2019': {
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+					]
+					const buttonMessage = {
+						caption: "Avengers | 2012 - 2019 | English | Movie Series | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/a665bfb05433429df887e.jpg" }
+					}
+					await conn.sendMessage(from, buttonMessage)
+				}
+					break
+
+					case 'axl-2018':
+				case 'axl': {
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+
+					const templateButtons = [
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+					]
+					const buttonMessage = {
+						caption: "AXL | 2018 | English | Movie | Sinhala Subtitles | TV Zone",
+						footer: config.FOOTER,
+						templateButtons: templateButtons,
+						image: { url: "https://telegra.ph/file/ef3472e27d1549c26dccc.jpg" }
 					}
 					await conn.sendMessage(from, buttonMessage)
 				}
