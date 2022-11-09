@@ -15,6 +15,7 @@ module.exports = {
 
 	FOOTER: process.env.FOOTER === undefined ? 'ⒸPowered By @NadithPro' : process.env.FOOTER,
 	BTNNAME: process.env.BTNNAME === undefined ? 'View Online' : process.env.BTNNAME,
+	RTYPE1: process.env.RTYPE1 === undefined ? '🔍' : process.env.RTYPE1,
 
 	OWNER_NAME: process.env.OWNER_NAME === undefined ? 'NadithPro' : process.env.OWNER_NAME,
 	OWNER_NUMBER: process.env.OWNER_NUMBER === undefined ? '94761327688' : process.env.OWNER_NUMBER,
