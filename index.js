@@ -279,7 +279,7 @@ const connectToWA = () => {
 						caption: "Assassin's Creed | 2016 | English | Movie | Sinhala Subtitles | TV Zone",
 						footer: config.FOOTER,
 						templateButtons: templateButtons,
-						image: { url: "https://telegra.ph/file/75e6e689b690bba8e25c5.jpg" }
+						image: { url: "https://telegra.ph/file/d9a2296f9b757eadf5738.jpg" }
 					}
 					await conn.sendMessage(from, buttonMessage)
 				}
