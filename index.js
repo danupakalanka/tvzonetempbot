@@ -76,8 +76,8 @@ const connectToWA = () => {
 			switch (command) {
 
 				case 'jid': try{
-					if (!from) return
-					 reply(from)
+					if (!from1) return
+					 reply(from1)
 					}
 					catch(e) {
 					  await conn.sendMessage(from1 , { text: '*Error ⛔*'  }, { quoted: mek } )
