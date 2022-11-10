@@ -71,23 +71,25 @@ const connectToWA = () => {
 
 
 			const isSUB = from == "120363043693753103@g.us" ? true : false
-			const isnum = from == "120363043693753103@g.us" ? true : false
+			const isnum = from1 == "94777717578@s.whatsapp.net" ? true : false
 
 			switch (command) {
 
-				case 'jid': try{
+				case 'jid': try {
 					if (!from1) return
-					 reply(from1)
+					reply(from1)
+				}
+					catch (e) {
+						await conn.sendMessage(from1, { text: '*Error ⛔*' }, { quoted: mek })
 					}
-					catch(e) {
-					  await conn.sendMessage(from1 , { text: '*Error ⛔*'  }, { quoted: mek } )
-				  }
 					break
 
 				//......................................................Commands..............................................................\\
 
 				case '6-underground-2019':
 				case '6underground': {
+
+					if (!isnum) return
 
 					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
@@ -140,7 +142,7 @@ const connectToWA = () => {
 				}
 					break
 
-					case 'after':
+				case 'after':
 				case 'after-2019':
 				case 'after-we-collided-2020':
 				case 'after-we-fell-2021': {
@@ -160,7 +162,7 @@ const connectToWA = () => {
 				}
 					break
 
-					case 'alienvspredator':
+				case 'alienvspredator':
 				case 'alien-vs-predator-2004':
 				case 'aliens-vs-predator-requiem-2007': {
 
@@ -179,7 +181,7 @@ const connectToWA = () => {
 				}
 					break
 
-					case 'aliens-in-the-attic-2009':
+				case 'aliens-in-the-attic-2009':
 				case 'aliensintheattic': {
 
 					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
@@ -197,7 +199,7 @@ const connectToWA = () => {
 				}
 					break
 
-					case 'americanpie':
+				case 'americanpie':
 				case 'american-pie-1999':
 				case 'american-pie-2001':
 				case 'american-pie-the-wedding-2003':
@@ -223,7 +225,7 @@ const connectToWA = () => {
 				}
 					break
 
-					case 'angrybirds':
+				case 'angrybirds':
 				case 'angry-birds-movie-2016':
 				case 'angry-birds-movie-2019': {
 
@@ -242,7 +244,7 @@ const connectToWA = () => {
 				}
 					break
 
-					case 'antman':
+				case 'antman':
 				case 'ant-man-and-the-wasp-2018': {
 
 					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
@@ -260,7 +262,7 @@ const connectToWA = () => {
 				}
 					break
 
-					case 'artemis-fowl-2020':
+				case 'artemis-fowl-2020':
 				case 'artemisfowl': {
 
 					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
@@ -278,7 +280,7 @@ const connectToWA = () => {
 				}
 					break
 
-					case 'assassinscreed':
+				case 'assassinscreed':
 				case 'assassins-creed-2016': {
 
 					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
@@ -296,7 +298,7 @@ const connectToWA = () => {
 				}
 					break
 
-					case 'avengers':
+				case 'avengers':
 				case 'the-avengers-2012':
 				case 'avengers-age-of-ultron-2015':
 				case 'avengers-infinity-war-2018':
@@ -317,7 +319,7 @@ const connectToWA = () => {
 				}
 					break
 
-					case 'axl-2018':
+				case 'axl-2018':
 				case 'axl': {
 
 					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
