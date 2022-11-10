@@ -89,7 +89,7 @@ const connectToWA = () => {
 				case '6-underground-2019':
 				case '6underground': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6-underground-2019" } },
@@ -107,7 +107,7 @@ const connectToWA = () => {
 				case '12-strong-2018':
 				case '12strong': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12-strong" } },
@@ -125,7 +125,7 @@ const connectToWA = () => {
 				case 'a-wrinkle-in-time-2018':
 				case 'awrinkleintime': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -145,7 +145,7 @@ const connectToWA = () => {
 				case 'after-we-collided-2020':
 				case 'after-we-fell-2021': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -164,7 +164,7 @@ const connectToWA = () => {
 				case 'alien-vs-predator-2004':
 				case 'aliens-vs-predator-requiem-2007': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -182,7 +182,7 @@ const connectToWA = () => {
 					case 'aliens-in-the-attic-2009':
 				case 'aliensintheattic': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -208,7 +208,7 @@ const connectToWA = () => {
 				case 'american-pie-reunion-2012':
 				case 'american-pie-presents-girls-rules-2020': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -227,7 +227,7 @@ const connectToWA = () => {
 				case 'angry-birds-movie-2016':
 				case 'angry-birds-movie-2019': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -245,7 +245,7 @@ const connectToWA = () => {
 					case 'antman':
 				case 'ant-man-and-the-wasp-2018': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -263,7 +263,7 @@ const connectToWA = () => {
 					case 'artemis-fowl-2020':
 				case 'artemisfowl': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -281,7 +281,7 @@ const connectToWA = () => {
 					case 'assassinscreed':
 				case 'assassins-creed-2016': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -302,7 +302,7 @@ const connectToWA = () => {
 				case 'avengers-infinity-war-2018':
 				case 'avengers-endgame-2019': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -320,7 +320,7 @@ const connectToWA = () => {
 					case 'axl-2018':
 				case 'axl': {
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
