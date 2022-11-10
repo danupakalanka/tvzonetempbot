@@ -234,7 +234,7 @@ const connectToWA = () => {
 						caption: "The Angry Birds Movie | 2016 - 2019 | English | Movie Series | Sinhala Subtitles | TV Zone",
 						footer: config.FOOTER,
 						templateButtons: templateButtons,
-						image: { url: "https://telegra.ph/file/744d62178c740bea60133.jpg" }
+						image: { url: "https://telegra.ph/file/91e92370b6f74cf791fb7.jpg" }
 					}
 					await conn.sendMessage(from, buttonMessage)
 				}
