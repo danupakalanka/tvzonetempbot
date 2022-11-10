@@ -44,8 +44,7 @@ const connectToWA = () => {
 			if (mek.key && mek.key.remoteJid === 'status@broadcast') return
 			const type = getContentType(mek.message)
 			const content = JSON.stringify(mek.message)
-			const from1 = mek.key.remoteJid
-			const from = '120363029528054894@g.us'
+			const from = mek.key.remoteJid
 
 			const quoted = type == 'extendedTextMessage' && mek.message.extendedTextMessage.contextInfo != null ? mek.message.extendedTextMessage.contextInfo.quotedMessage || [] : []
 			const body = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'listResponseMessage') && mek.message.listResponseMessage.singleSelectReply.selectedRowId ? mek.message.listResponseMessage.singleSelectReply.selectedRowId : (type == 'buttonsResponseMessage') && mek.message.buttonsResponseMessage.selectedButtonId ? mek.message.buttonsResponseMessage.selectedButtonId : (type == "templateButtonReplyMessage") && mek.message.templateButtonReplyMessage.selectedId ? mek.message.templateButtonReplyMessage.selectedId : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : ''
@@ -70,18 +69,18 @@ const connectToWA = () => {
 			}
 
 
-			const isSUB = from == "120363043693753103@g.us" ? true : false
-			const isnum = from1 == "94777717578@s.whatsapp.net" ? true : false
+			const isSUB = from == config.SENDJID ? true : false
 
 			switch (command) {
 
 				case 'jid': try {
-					if (!from1) return
-					reply(from1)
+					if (!from) return
+					reply(from)
 				}
 					catch (e) {
-						await conn.sendMessage(from1, { text: '*Error ⛔*' }, { quoted: mek })
+						await conn.sendMessage(from, { text: '*Error ⛔*' }, { quoted: mek })
 					}
+
 					break
 
 				//......................................................Commands..............................................................\\
@@ -89,9 +88,9 @@ const connectToWA = () => {
 				case '6-underground-2019':
 				case '6underground': {
 
-					if (!isnum) return
+					if (!isSUB) return
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6-underground-2019" } },
@@ -102,14 +101,16 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/302d6b8a11c3c3af4f6a8.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
 				case '12-strong-2018':
 				case '12strong': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12-strong" } },
@@ -120,14 +121,16 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/6a4f88ced256406791899.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
 				case 'a-wrinkle-in-time-2018':
 				case 'awrinkleintime': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -138,7 +141,7 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/744d62178c740bea60133.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
@@ -147,7 +150,9 @@ const connectToWA = () => {
 				case 'after-we-collided-2020':
 				case 'after-we-fell-2021': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -158,7 +163,7 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/b6cda88245576ed4de6b3.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
@@ -166,7 +171,9 @@ const connectToWA = () => {
 				case 'alien-vs-predator-2004':
 				case 'aliens-vs-predator-requiem-2007': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -177,14 +184,16 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/16f2128d40f113d20ef83.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
 				case 'aliens-in-the-attic-2009':
 				case 'aliensintheattic': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -195,7 +204,7 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/26100348f501cf4bd0dd9.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
@@ -210,7 +219,9 @@ const connectToWA = () => {
 				case 'american-pie-reunion-2012':
 				case 'american-pie-presents-girls-rules-2020': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -221,7 +232,7 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/30aae396e71242612a62a.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
@@ -229,7 +240,9 @@ const connectToWA = () => {
 				case 'angry-birds-movie-2016':
 				case 'angry-birds-movie-2019': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -240,14 +253,16 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/91e92370b6f74cf791fb7.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
 				case 'antman':
 				case 'ant-man-and-the-wasp-2018': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -258,14 +273,16 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/944952aedae0ecec48644.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
 				case 'artemis-fowl-2020':
 				case 'artemisfowl': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -276,14 +293,16 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/75e6e689b690bba8e25c5.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
 				case 'assassinscreed':
 				case 'assassins-creed-2016': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -294,7 +313,7 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/d9a2296f9b757eadf5738.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
@@ -304,7 +323,9 @@ const connectToWA = () => {
 				case 'avengers-infinity-war-2018':
 				case 'avengers-endgame-2019': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -315,14 +336,16 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/a665bfb05433429df887e.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
 				case 'axl-2018':
 				case 'axl': {
 
-					conn.sendMessage(from1, { react: { text: config.RTYPE1, key: mek.key } })
+					if (!isSUB) return
+
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
@@ -333,7 +356,7 @@ const connectToWA = () => {
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/ef3472e27d1549c26dccc.jpg" }
 					}
-					await conn.sendMessage(from, buttonMessage)
+					await conn.sendMessage(config.GROUPJID, buttonMessage)
 				}
 					break
 
