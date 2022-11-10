@@ -71,6 +71,7 @@ const connectToWA = () => {
 
 
 			const isSUB = from == "120363043693753103@g.us" ? true : false
+			const isnum = from == "120363043693753103@g.us" ? true : false
 
 			switch (command) {
 
@@ -79,7 +80,7 @@ const connectToWA = () => {
 					 reply(from)
 					}
 					catch(e) {
-					  await conn.sendMessage(from , { text: '*Error ⛔*'  }, { quoted: mek } )
+					  await conn.sendMessage(from1 , { text: '*Error ⛔*'  }, { quoted: mek } )
 				  }
 					break
 
