@@ -158,7 +158,7 @@ const connectToWA = () => {
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=After" } },
 					]
 					const buttonMessage = {
-						caption: "After | 2019 - 2021 | English | Movie Series | Sinhala Subtitles | TV Zone",
+						caption: "After | 2019 - 2021 | 18+ | English | Movie Series | Sinhala Subtitles | TV Zone",
 						footer: config.FOOTER,
 						templateButtons: templateButtons,
 						image: { url: "https://telegra.ph/file/b6cda88245576ed4de6b3.jpg" }
