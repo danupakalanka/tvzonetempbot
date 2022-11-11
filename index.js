@@ -155,7 +155,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/after-movie-series" } },
 					]
 					const buttonMessage = {
 						caption: "After | 2019 - 2021 | English | Movie Series | Sinhala Subtitles | TV Zone",
