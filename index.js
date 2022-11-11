@@ -93,7 +93,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/6-underground-2019" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "6-underground-2019" } },
 					]
 					const buttonMessage = {
 						caption: "6 Underground | 2019 | 18+ | English | Movie | Sinhala Subtitles | TV Zone",
@@ -113,7 +113,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/12-strong" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "12-strong" } },
 					]
 					const buttonMessage = {
 						caption: "12 Strong | 2018 | English | Movie | Sinhala Subtitles | TV Zone",
@@ -133,7 +133,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "a-wrinkle-in-time-2018" } },
 					]
 					const buttonMessage = {
 						caption: "A Wrinkle In Time | 2018 | English | Movie | Sinhala Subtitles | TV Zone",
@@ -155,7 +155,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/after-movie-series" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=After" } },
 					]
 					const buttonMessage = {
 						caption: "After | 2019 - 2021 | English | Movie Series | Sinhala Subtitles | TV Zone",
@@ -176,7 +176,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Alien%20Vs%20Predator" } },
 					]
 					const buttonMessage = {
 						caption: "Alien Vs Predator | 2004 - 2007 | English | Movie Series | Sinhala Subtitles | TV Zone",
@@ -196,7 +196,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Aliens%20In%20The%20Attic" } },
 					]
 					const buttonMessage = {
 						caption: "Aliens In The Attic | 2009 | English | Movie | Sinhala Subtitles | TV Zone",
@@ -224,7 +224,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=American%20Pie" } },
 					]
 					const buttonMessage = {
 						caption: "American Pie | 1999 - 2020 | English | Movie Series | Sinhala Subtitles | TV Zone",
@@ -245,7 +245,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Angry%20Birds" } },
 					]
 					const buttonMessage = {
 						caption: "The Angry Birds Movie | 2016 - 2019 | English | Movie Series | Sinhala Subtitles | TV Zone",
@@ -265,7 +265,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Ant%20Man" } },
 					]
 					const buttonMessage = {
 						caption: "Ant Man | 2015 - 2018 | English | Movie Series | Sinhala Subtitles | TV Zone",
@@ -285,7 +285,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Artemis%20Fowl" } },
 					]
 					const buttonMessage = {
 						caption: "Artemis Fowl | 2020 | English | Movie | Sinhala Subtitles | TV Zone",
@@ -305,7 +305,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Assassins%20Creed" } },
 					]
 					const buttonMessage = {
 						caption: "Assassin's Creed | 2016 | English | Movie | Sinhala Subtitles | TV Zone",
@@ -328,7 +328,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Avengers" } },
 					]
 					const buttonMessage = {
 						caption: "Avengers | 2012 - 2019 | English | Movie Series | Sinhala Subtitles | TV Zone",
@@ -348,7 +348,7 @@ const connectToWA = () => {
 					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
 					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: "https://tv.nadith.pro/a-wrinkle-in-time-2018" } },
+						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=AXL" } },
 					]
 					const buttonMessage = {
 						caption: "AXL | 2018 | English | Movie | Sinhala Subtitles | TV Zone",
