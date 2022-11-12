@@ -16,6 +16,7 @@ module.exports = {
 	FOOTER: process.env.FOOTER === undefined ? 'ⒸPowered By @NadithPro' : process.env.FOOTER,
 	BTNNAME: process.env.BTNNAME === undefined ? 'View Online' : process.env.BTNNAME,
 	RTYPE1: process.env.RTYPE1 === undefined ? '🔍' : process.env.RTYPE1,
+	SITELINK: process.env.SITELINK === undefined ? 'https://tv.nadith.pro/' : process.env.SITELINK,
 
 	GROUPJID: process.env.GROUPJID === undefined ? '120363049874424207@g.us' : process.env.GROUPJID,
 	SENDJID: process.env.SENDJID === undefined ? '94777717578@s.whatsapp.net' : process.env.SENDJID,
