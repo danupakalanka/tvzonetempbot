@@ -90,18 +90,10 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					
 
-					const templateButtons = [
-						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "6-underground-2019" } },
-					]
-					const buttonMessage = {
-						caption: "6 Underground | 2019 | 18+ | English | Movie | Sinhala Subtitles | TV Zone",
-						footer: config.FOOTER,
-						templateButtons: templateButtons,
-						image: { url: "https://telegra.ph/file/302d6b8a11c3c3af4f6a8.jpg" }
-					}
-					await conn.sendMessage(config.GROUPJID, buttonMessage)
+					
+					
 				}
 					break
 
@@ -110,7 +102,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "12-strong-2018" } },
@@ -130,7 +122,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "a-wrinkle-in-time-2018" } },
@@ -152,7 +144,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=After" } },
@@ -173,7 +165,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Alien%20Vs%20Predator" } },
@@ -193,7 +185,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "aliens-in-the-attic-2009" } },
@@ -221,7 +213,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=American%20Pie" } },
@@ -242,7 +234,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Angry%20Birds" } },
@@ -262,7 +254,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Ant%20Man" } },
@@ -282,7 +274,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "artemis-fowl-2020" } },
@@ -302,7 +294,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Assassins%20Creed" } },
@@ -325,7 +317,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Avengers" } },
@@ -345,7 +337,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "axl-2018" } },
@@ -367,7 +359,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Batman" } },
@@ -387,7 +379,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "batman-v-superman-dawn-of-justice-2016" } },
@@ -407,7 +399,7 @@ const connectToWA = () => {
 		
 							if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "baywatch-2017" } },
@@ -427,7 +419,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "beauty-and-the-beast-2017" } },
@@ -447,7 +439,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "big-hero-6-2014" } },
@@ -467,7 +459,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn-2020" } },
@@ -487,7 +479,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Black%20Panther" } },
@@ -507,7 +499,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "blood-in-the-water-2022" } },
@@ -527,7 +519,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "bloodshot-2020" } },
@@ -547,7 +539,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "blowback-2022" } },
@@ -567,7 +559,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "bumblebee-2018" } },
@@ -589,7 +581,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Cars" } },
@@ -609,7 +601,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Charlies%20Angles" } },
@@ -629,7 +621,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "coco-2017" } },
@@ -650,7 +642,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Deadpool" } },
@@ -670,7 +662,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "dirty-grandpa-2016" } },
@@ -691,7 +683,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "_/search?query=Doctor%Strange" } },
@@ -711,7 +703,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "dolittle-2020" } },
@@ -731,7 +723,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "dora-and-the-lost-city-of-gold-2019" } },
@@ -751,7 +743,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 					]
@@ -770,7 +762,7 @@ const connectToWA = () => {
 
 					if (!isSUB) return
 
-					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
+					conn.sendMessage(from, { react: { text: config.RTYPE3, key: mek.key } })
 
 					const templateButtons = [
 						{ urlButton: { displayText: config.BTNNAME, url: config.SITELINK + "dumbo-2019" } },
